@@ -170,7 +170,7 @@ export default function ChatScreen({ id, recipient, messages }) {
                 .ref(`messages/${doc.id}`)
                 .putString(imageToMessage, "data_url");
               removeImage();
-              console.log(doc.id);
+              // console.log(doc.id);
 
               uploadTask.on(
                 "state_change",
